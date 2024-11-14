@@ -1,11 +1,10 @@
 package othello2;
-
+// 박관호 수정 1
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
-
 public class GUI extends JFrame implements ActionListener {
 	private JPanel panel;
 
