@@ -1,5 +1,5 @@
 package othello2;
-// 박관호 수정 1
+// 박관호 수정 2
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
