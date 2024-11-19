@@ -28,11 +28,11 @@ public class OthelloGame extends TwoDGame {
 			{ 6, -3, 1, 1, 1, 1, -3, 6 }, { -8, -16, -3, -3, -3, -3, -16, -8 },
 			{ 50, -8, 6, 4, 4, 6, -8, 50 } };
 	private int[][] forsightboardValues = { { 200, 6, 8, 6, 6, 8, 6, 200 },
-			{ 6, 1, 1, 1, 1, 1, 1, 6 }, 
-			{ 8, 1, 1, 1, 1, 1, 1, 8 },
-			{ 6, 1, 1, 1, 1, 1, 1, 6 }, 
 			{ 6, 1, 1, 1, 1, 1, 1, 6 },
-			{ 8, 1, 1, 1, 1, 1, 1, 8 }, 
+			{ 8, 1, 1, 1, 1, 1, 1, 8 },
+			{ 6, 1, 1, 1, 1, 1, 1, 6 },
+			{ 6, 1, 1, 1, 1, 1, 1, 6 },
+			{ 8, 1, 1, 1, 1, 1, 1, 8 },
 			{ 6, 1, 1, 1, 1, 1, 1, 6 },
 			{ 200, 6, 8, 6, 6, 8, 6, 200 } };
 
@@ -476,7 +476,7 @@ public class OthelloGame extends TwoDGame {
 						{
 							moveValues[i][j] += 2 * (boardValues[locs.get(0).get(z)][locs.get(1).get(z)]);
 						}
-						
+
 						Piece[][] vBoard = new Piece[8][8];
 						for (int k = 0; k < 8; k++)
 							for (int h = 0; h < 8; h++) {
@@ -1070,7 +1070,7 @@ public class OthelloGame extends TwoDGame {
 				tmpcLocs.add(i);
 			} else if (flippingPieces.size() > 0
 					&& getPiece(r, i, board).toString().equals(player)) {
-								for(int z=0; z < tmprLocs.size(); z++)
+				for(int z=0; z < tmprLocs.size(); z++)
 				{
 					rLocs.add(tmprLocs.get(z));
 					cLocs.add(tmpcLocs.get(z));
@@ -1099,7 +1099,7 @@ public class OthelloGame extends TwoDGame {
 
 			else if (flippingPieces.size() > 0
 					&& getPiece(i, c, board).toString().equals(player)) {
-								for(int z=0; z < tmprLocs.size(); z++)
+				for(int z=0; z < tmprLocs.size(); z++)
 				{
 					rLocs.add(tmprLocs.get(z));
 					cLocs.add(tmpcLocs.get(z));
@@ -1128,7 +1128,7 @@ public class OthelloGame extends TwoDGame {
 
 			else if (flippingPieces.size() > 0
 					&& getPiece(i, c, board).toString().equals(player)) {
-								for(int z=0; z < tmprLocs.size(); z++)
+				for(int z=0; z < tmprLocs.size(); z++)
 				{
 					rLocs.add(tmprLocs.get(z));
 					cLocs.add(tmpcLocs.get(z));
@@ -1159,7 +1159,7 @@ public class OthelloGame extends TwoDGame {
 
 			else if (flippingPieces.size() > 0
 					&& getPiece(j, i, board).toString().equals(player)) {
-								for(int z=0; z < tmprLocs.size(); z++)
+				for(int z=0; z < tmprLocs.size(); z++)
 				{
 					rLocs.add(tmprLocs.get(z));
 					cLocs.add(tmpcLocs.get(z));
@@ -1193,7 +1193,7 @@ public class OthelloGame extends TwoDGame {
 
 			else if (flippingPieces.size() > 0
 					&& getPiece(j, i, board).toString().equals(player)) {
-								for(int z=0; z < tmprLocs.size(); z++)
+				for(int z=0; z < tmprLocs.size(); z++)
 				{
 					rLocs.add(tmprLocs.get(z));
 					cLocs.add(tmpcLocs.get(z));
@@ -1227,7 +1227,7 @@ public class OthelloGame extends TwoDGame {
 
 			else if (flippingPieces.size() > 0
 					&& getPiece(j, i, board).toString().equals(player)) {
-								for(int z=0; z < tmprLocs.size(); z++)
+				for(int z=0; z < tmprLocs.size(); z++)
 				{
 					rLocs.add(tmprLocs.get(z));
 					cLocs.add(tmpcLocs.get(z));
@@ -1261,7 +1261,7 @@ public class OthelloGame extends TwoDGame {
 
 			else if (flippingPieces.size() > 0
 					&& getPiece(j, i, board).toString().equals(player)) {
-								for(int z=0; z < tmprLocs.size(); z++)
+				for(int z=0; z < tmprLocs.size(); z++)
 				{
 					rLocs.add(tmprLocs.get(z));
 					cLocs.add(tmpcLocs.get(z));
@@ -1275,7 +1275,7 @@ public class OthelloGame extends TwoDGame {
 			j--;
 		}
 		flippingPieces.clear();
-		
+
 		ArrayList<ArrayList<Integer>> returned = new ArrayList<ArrayList<Integer>>();
 		returned.add(rLocs);
 		returned.add(cLocs);

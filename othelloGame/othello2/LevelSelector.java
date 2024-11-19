@@ -34,7 +34,7 @@ public class LevelSelector extends JFrame {
         setLocationRelativeTo(null);
     }
 
-    private void startGame() {
+    public void startGame() {
         this.dispose();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
